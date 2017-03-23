@@ -19,3 +19,30 @@
     outline: none;
     cursor: pointer;
 }
+
+/*-------------------ACERCA DE MI*/
+.me{
+    background-color: #f05f40;
+    padding: 40px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+.me hr{
+    border: 1px solid #fff;
+    width: 40px;
+}
+
+/*-----------------CONTACTAME*/
+.contact hr{
+    border: 1px solid #f05f40;
+    width: 40px;
+}
+.contact p{
+    margin-bottom: 35px;
+}
+.contact, .icon-container{
+    color: black;
+}
+.contact a{
+    color: #f05f40;
+}
