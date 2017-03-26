@@ -1,0 +1,31 @@
+
+@import 'partials/personal.scss';
+
+.section_1{
+    background-image: url(../imagenes/foto.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    
+    h3{
+        color: $color_titulos;
+        font-family: $letra_titulos;
+    }
+    p{
+        font-family: $letra_contenido;
+    }
+
+}
+
+/*-----------------ACERCA DE MI*/
+
+.section_2{
+    h3{
+        color: $color_subtitulos;
+    }
+}
+.picture{
+    
+}

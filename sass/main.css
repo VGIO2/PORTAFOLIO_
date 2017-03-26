@@ -1,0 +1,18 @@
+.section_1 {
+  background-image: url(../imagenes/foto.gif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 700px; }
+  .section_1 h3 {
+    color: #e3f6f3;
+    font-family: "Love Ya Like A Sister", cursive; }
+  .section_1 p {
+    font-family: "Carter One", cursive; }
+
+/*-----------------ACERCA DE MI*/
+.section_2 h3 {
+  color: #9d9d93; }
+
+/*# sourceMappingURL=main.css.map */
