@@ -1,6 +1,12 @@
 
 @import 'partials/personal.scss';
 
+*{outline: solid red 1px};
+
+h2{
+    font-family: $letra_titulos;
+}
+
 .section_1{
     background-image: url(../imagenes/foto.gif);
     background-size: cover;
@@ -20,12 +26,99 @@
 }
 
 /*-----------------ACERCA DE MI*/
+/*-----------------HABILIDADES*/
+/*.percent-count{
+    width: 450px;
+    height: 50px;
+    margin: 100px auto;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+.progress-bar{
+    width: 506px;
+    height: 26px;
+    background-color: aqua;
+    padding: 3px;
+    border-radius: 13px;
+    margin:50px auto;    
+}
+.progress{
+    width: 25px;    
+    height: 20px;    
+    border-radius: 10px;
+    background-color: yellowgreen;
 
-.section_2{
-    h3{
-        color: $color_subtitulos;
+}*/
+
+.section_3{
+    background-color: $color_fondo;
+    padding: 10px 0 10px 0 ;
+}
+.fondo_3{
+    background-color: $color_semifondo;
+}
+
+
+.container_box{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    -webkit-perspective: 700;
+    
+    .inside_box{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 2s;
+        box-shadow: 0 0 0 5px black;
+        
+        &:hover{
+        transform: rotateY(180deg);
+    }
+    }
+    
+    .side{
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+    .face{
+        background: crimson;
+    }
+    .back{
+        background: green;
+        transform: rotateY(180deg);
+    }
+    .img-skill{
+        width: 100%;
+        height: 100%;
+    }
+    .content-skill{
+        font-family: $letra_contenido;
     }
 }
-.picture{
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

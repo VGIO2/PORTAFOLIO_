@@ -1,3 +1,9 @@
+* {
+  outline: solid red 1px; }
+
+h2 {
+  font-family: "Love Ya Like A Sister", cursive; }
+
 .section_1 {
   background-image: url(../imagenes/foto.gif);
   background-size: cover;
@@ -12,7 +18,65 @@
     font-family: "Carter One", cursive; }
 
 /*-----------------ACERCA DE MI*/
-.section_2 h3 {
-  color: #9d9d93; }
+/*-----------------HABILIDADES*/
+/*.percent-count{
+    width: 450px;
+    height: 50px;
+    margin: 100px auto;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+.progress-bar{
+    width: 506px;
+    height: 26px;
+    background-color: aqua;
+    padding: 3px;
+    border-radius: 13px;
+    margin:50px auto;    
+}
+.progress{
+    width: 25px;    
+    height: 20px;    
+    border-radius: 10px;
+    background-color: yellowgreen;
+
+}*/
+.section_3 {
+  background-color: #a8a39d;
+  padding: 10px 0 10px 0; }
+
+.fondo_3 {
+  background-color: #e2ddd9; }
+
+.container_box {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  -webkit-perspective: 700; }
+  .container_box .inside_box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+    box-shadow: 0 0 0 5px black; }
+    .container_box .inside_box:hover {
+      transform: rotateY(180deg); }
+  .container_box .side {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute; }
+  .container_box .face {
+    background: crimson; }
+  .container_box .back {
+    background: green;
+    transform: rotateY(180deg); }
+  .container_box .img-skill {
+    width: 100%;
+    height: 100%; }
+  .container_box .content-skill {
+    font-family: "Carter One", cursive; }
 
 /*# sourceMappingURL=main.css.map */
