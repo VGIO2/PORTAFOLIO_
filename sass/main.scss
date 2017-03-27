@@ -26,6 +26,8 @@ h2{
 }
 
 /*-----------------ACERCA DE MI*/
+
+
 /*-----------------HABILIDADES*/
 /*.percent-count{
     width: 450px;
@@ -53,10 +55,11 @@ h2{
 
 .section_3{
     background-color: $color_fondo;
-    padding: 10px 0 10px 0 ;
+    padding: 40px 0 40px 0 ;
 }
 .fondo_3{
     background-color: $color_semifondo;
+   
 }
 
 
@@ -64,7 +67,10 @@ h2{
     height: 250px;
     width: 250px;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     -webkit-perspective: 700;
+    
     
     .inside_box{
         height: 100%;
@@ -72,7 +78,7 @@ h2{
         position: relative;
         transform-style: preserve-3d;
         transition: 2s;
-        box-shadow: 0 0 0 5px black;
+        box-shadow: 0 0 0 5px gray;
         
         &:hover{
         transform: rotateY(180deg);
@@ -92,7 +98,7 @@ h2{
         background: $color_back;
         transform: rotateY(180deg);
     }
-    .img-skill{
+    .img{
         width: 100%;
         height: 100%;
     }
@@ -102,7 +108,9 @@ h2{
 }
 /*-----------------PROYECTOS*/
 
-
+.danza{
+    height: 200px;
+}
 
 
 /*-----------------CONTACTAME*/

@@ -43,16 +43,18 @@ h2 {
 
 }*/
 .section_3 {
-  background-color: #a8a39d;
-  padding: 10px 0 10px 0; }
+  background-color: #373E3A;
+  padding: 40px 0 40px 0; }
 
 .fondo_3 {
-  background-color: #e2ddd9; }
+  background-color: #3EF9CF; }
 
 .container_box {
   height: 250px;
   width: 250px;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   -webkit-perspective: 700; }
   .container_box .inside_box {
     height: 100%;
@@ -60,7 +62,7 @@ h2 {
     position: relative;
     transform-style: preserve-3d;
     transition: 2s;
-    box-shadow: 0 0 0 5px black; }
+    box-shadow: 0 0 0 5px gray; }
     .container_box .inside_box:hover {
       transform: rotateY(180deg); }
   .container_box .side {
@@ -69,17 +71,20 @@ h2 {
     backface-visibility: hidden;
     position: absolute; }
   .container_box .face {
-    background: #a8a39d; }
+    background: #2FBB9B; }
   .container_box .back {
-    background: #f8f1e9;
+    background: #F93E68;
     transform: rotateY(180deg); }
-  .container_box .img-skill {
+  .container_box .img {
     width: 100%;
     height: 100%; }
   .container_box .content-skill {
     font-family: "Carter One", cursive; }
 
 /*-----------------PROYECTOS*/
+.danza {
+  height: 200px; }
+
 /*-----------------CONTACTAME*/
 .section_5 .container {
   margin: 0;
