@@ -86,10 +86,10 @@ h2{
         position: absolute;
     }
     .face{
-        background: crimson;
+        background: $color_face;
     }
     .back{
-        background: green;
+        background: $color_back;
         transform: rotateY(180deg);
     }
     .img-skill{
@@ -102,25 +102,22 @@ h2{
 }
 /*-----------------PROYECTOS*/
 
-#proyectos {
-  color: #392033;
-  background: #fec051;
-  background: -moz-linear-gradient(-45deg, #fec051, #ff8967);
-  background: -webkit-linear-gradient(-45deg, #fec051, #ff8967);
-  background: linear-gradient(0deg, #fec051 0%, #ff8967 100%); }
-  #proyectos figure.effect-bubba {
-    background: #392033; }
-  #proyectos .grid figure {
-    margin: 5px 1%;
-    min-width: 100%;
-    max-width: 100%;
-    border: 5px solid white; }
-    #proyectos .grid figure span {
-      font-weight: 600; }
-  #proyectos .btn-default {
-    color: white;
-    background-color: #fd6051;
-    border-color: #fd6051; }
+
+
+
+/*-----------------CONTACTAME*/
+
+.section_5{
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    img-contact{
+        width: 100%;
+    }
+}
+
+
 
 
 
