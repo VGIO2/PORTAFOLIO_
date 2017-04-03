@@ -13,6 +13,14 @@ body{
     line-height: 90px;
     color: $color_header;
 }
+
+@mixin letra_contenido{
+    font-family: $letra_contenido;
+    font-size: 22px;
+    background-color: $color_background;
+    color: #fff;
+    padding: 8px 10px 8px 10px;
+}
 /*---------------------------------------------------HEADER*/
 header{
     
@@ -77,13 +85,7 @@ header{
 }
 
 /*-----------------ACERCA DE MI*/
-@mixin letra_contenido{
-    font-family: $letra_contenido;
-    font-size: 22px;
-    background-color: $color_background;
-    color: #fff;
-    padding: 8px 10px 8px 10px;
-}
+
 
 .section_2{
     h2{
@@ -105,92 +107,30 @@ header{
     }
 }
 
-/*-----------------HABILIDADES
-.percent-count{
-    width: 450px;
-    height: 50px;
-    margin: 100px auto;
-    font-size: 50px;
-    text-align: center;
-    color: black;
-}
-.progress-bar{
-    width: 506px;
-    height: 26px;
-    background-color: aqua;
-    padding: 3px;
-    border-radius: 13px;
-    margin:50px auto;    
-}
-.progress{
-    width: 25px;    
-    height: 20px;    
-    border-radius: 10px;
-    background-color: yellowgreen;
 
-}
-
+/*-----------------HABILIDADES*/
 .section_3{
-    background-color: $color_fondo;
-    padding: 40px 0 40px 0 ;
-}
-.fondo_3{
-    background-color: $color_semifondo;
-   
-}
+    h2{
+        @include titulos;
+    }
+    .hab1{
+        width: 20
+            0px; 
+        height: 200px; 
+        border-radius: 150px; 
+        box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        background: url(../imagenes/html.png) no-repeat; 
 
-
-.container_box{
-    height: 250px;
-    width: 250px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-perspective: 700;
-    
-    
-    .inside_box{
-        height: 100%;
-        width: 100%;
-        position: relative;
-        transform-style: preserve-3d;
-        transition: 2s;
-        box-shadow: 0 0 0 5px gray;
-        
-        &:hover{
-        transform: rotateY(180deg);
     }
-    }
-    
-    .side{
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        position: absolute;
-    }
-    .face{
-        background: $color_face;
-    }
-    .back{
-        background: $color_back;
-        transform: rotateY(180deg);
-    }
-    .img{
-        width: 100%;
-        height: 100%;
-    }
-    .content-skill{
-        font-family: $letra_contenido;
-    }
-}*/
-/*-----------------PROYECTOS
+}
+/*-----------------PROYECTOS*/
 
 .danza{
     height: 200px;
 }
 
 
-/*-----------------CONTACTAME
+/*-----------------CONTACTAME*/
 
 .section_5{
     .container{
@@ -200,7 +140,7 @@ header{
     img-contact{
         width: 100%;
     }
-}*/
+}
 
 
 
