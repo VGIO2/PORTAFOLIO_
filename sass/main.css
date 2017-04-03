@@ -1,25 +1,81 @@
+/*-------------------------------HEADER*/
 * {
   outline: solid red 1px; }
 
-h2 {
-  font-family: "Love Ya Like A Sister", cursive; }
+body {
+  margin: 0; }
 
+/*---------------------------------------------------HEADER*/
+.navbar {
+  margin: 0;
+  background-color: white; }
+  .navbar .navbar-toggle {
+    margin-right: 15px;
+    margin-top: 25px; }
+  .navbar .navbar-brand {
+    background-color: #222222;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 20px; }
+  .navbar span {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 90px;
+    color: #222222;
+    padding: 0;
+    margin-left: 15px; }
+  .navbar .navbar-nav {
+    margin-top: 20px; }
+    .navbar .navbar-nav li {
+      font-size: 12px;
+      font-family: "Julius Sans One", sans-serif;
+      font-weight: 300;
+      line-height: 90px;
+      color: #5b5b5b; }
+  .navbar .navbar-header {
+    background-color: white; }
+
+/*---------------------------------------------------HERO*/
 .section_1 {
-  background-image: url(../imagenes/foto.gif);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  min-height: 700px; }
-  .section_1 h3 {
-    color: #e3f6f3;
-    font-family: "Love Ya Like A Sister", cursive; }
-  .section_1 p {
-    font-family: "Carter One", cursive; }
+  width: 100%;
+  height: auto;
+  border: 0; }
+  .section_1 .hero-img {
+    width: 100%;
+    height: auto; }
+    .section_1 .hero-img img {
+      width: 100%;
+      height: auto; }
+  .section_1 .hero-content {
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 7%; }
 
 /*-----------------ACERCA DE MI*/
-/*-----------------HABILIDADES*/
-/*.percent-count{
+.section_2 h2 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 90px;
+  color: #222222; }
+.section_2 .content {
+  font-family: "Dosis", sans-serif;
+  font-size: 22px;
+  background-color: #1C1C1C;
+  color: #fff;
+  padding: 8px 10px 8px 10px; }
+.section_2 .btn {
+  font-family: "Julius Sans One", sans-serif;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 120px; }
+  .section_2 .btn.btn-info {
+    background-color: black; }
+
+/*-----------------HABILIDADES
+.percent-count{
     width: 450px;
     height: 50px;
     margin: 100px auto;
@@ -41,55 +97,78 @@ h2 {
     border-radius: 10px;
     background-color: yellowgreen;
 
+}
+
+.section_3{
+    background-color: $color_fondo;
+    padding: 40px 0 40px 0 ;
+}
+.fondo_3{
+    background-color: $color_semifondo;
+   
+}
+
+
+.container_box{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-perspective: 700;
+    
+    
+    .inside_box{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: 2s;
+        box-shadow: 0 0 0 5px gray;
+        
+        &:hover{
+        transform: rotateY(180deg);
+    }
+    }
+    
+    .side{
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+    .face{
+        background: $color_face;
+    }
+    .back{
+        background: $color_back;
+        transform: rotateY(180deg);
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+    .content-skill{
+        font-family: $letra_contenido;
+    }
 }*/
-.section_3 {
-  background-color: #373E3A;
-  padding: 40px 0 40px 0; }
+/*-----------------PROYECTOS
 
-.fondo_3 {
-  background-color: #3EF9CF; }
+.danza{
+    height: 200px;
+}
 
-.container_box {
-  height: 250px;
-  width: 250px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  -webkit-perspective: 700; }
-  .container_box .inside_box {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 2s;
-    box-shadow: 0 0 0 5px gray; }
-    .container_box .inside_box:hover {
-      transform: rotateY(180deg); }
-  .container_box .side {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    position: absolute; }
-  .container_box .face {
-    background: #2FBB9B; }
-  .container_box .back {
-    background: #F93E68;
-    transform: rotateY(180deg); }
-  .container_box .img {
-    width: 100%;
-    height: 100%; }
-  .container_box .content-skill {
-    font-family: "Carter One", cursive; }
 
-/*-----------------PROYECTOS*/
-.danza {
-  height: 200px; }
+/*-----------------CONTACTAME
 
-/*-----------------CONTACTAME*/
-.section_5 .container {
-  margin: 0;
-  padding: 0; }
-.section_5 img-contact {
-  width: 100%; }
+.section_5{
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    img-contact{
+        width: 100%;
+    }
+}*/
 
 /*# sourceMappingURL=main.css.map */

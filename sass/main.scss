@@ -2,34 +2,111 @@
 @import 'partials/personal.scss';
 
 *{outline: solid red 1px};
-
-h2{
+body{
+    margin: 0;
+    
+}
+@mixin titulos{
     font-family: $letra_titulos;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 90px;
+    color: $color_header;
+}
+/*---------------------------------------------------HEADER*/
+header{
+    
+}
+.navbar{
+    margin: 0;
+    background-color: white;
+    
+    .navbar-toggle{
+        margin-right: 15px;
+        margin-top: 25px;
+    }
+    .navbar-brand{
+        background-color:$color_header;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    span{
+        @include titulos;
+        padding: 0;
+        margin-left: 15px;
+    }
+    .navbar-nav{
+        margin-top: 20px;
+        li{
+            font-size: 12px;
+            font-family: $letra_titulos;
+            font-weight: 300;
+            line-height: 90px;
+            color: $color_letra;
+        }
+    }
+    .navbar-header{
+        background-color: white;
+    }
 }
 
-.section_1{
-    background-image: url(../imagenes/foto.gif);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 700px;
-    
-    h3{
-        color: $color_titulos;
-        font-family: $letra_titulos;
-    }
-    p{
-        font-family: $letra_contenido;
-    }
 
+
+/*---------------------------------------------------HERO*/
+.section_1{
+    width: 100%;
+    height: auto;
+    border: 0;
+    
+    .hero-img{
+        width: 100%;
+        height: auto;
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .hero-content{
+        position: absolute;
+        z-index: 2;
+        top: 20%;
+        left: 7%;
+    }
 }
 
 /*-----------------ACERCA DE MI*/
+@mixin letra_contenido{
+    font-family: $letra_contenido;
+    font-size: 22px;
+    background-color: $color_background;
+    color: #fff;
+    padding: 8px 10px 8px 10px;
+}
 
+.section_2{
+    h2{
+        @include titulos;
+    }
+    .content{
+        @include letra_contenido;
+        
+    }
+    .btn{
+        font-family: $letra_titulos;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 120px;
+    
+        &.btn-info{
+            background-color: black;
+       }   
+    }
+}
 
-/*-----------------HABILIDADES*/
-/*.percent-count{
+/*-----------------HABILIDADES
+.percent-count{
     width: 450px;
     height: 50px;
     margin: 100px auto;
@@ -51,7 +128,7 @@ h2{
     border-radius: 10px;
     background-color: yellowgreen;
 
-}*/
+}
 
 .section_3{
     background-color: $color_fondo;
@@ -105,15 +182,15 @@ h2{
     .content-skill{
         font-family: $letra_contenido;
     }
-}
-/*-----------------PROYECTOS*/
+}*/
+/*-----------------PROYECTOS
 
 .danza{
     height: 200px;
 }
 
 
-/*-----------------CONTACTAME*/
+/*-----------------CONTACTAME
 
 .section_5{
     .container{
@@ -123,7 +200,7 @@ h2{
     img-contact{
         width: 100%;
     }
-}
+}*/
 
 
 
