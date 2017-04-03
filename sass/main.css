@@ -82,21 +82,43 @@ body {
   line-height: 90px;
   color: #222222; }
 .section_3 .hab1 {
-  width: 20 0px;
-  height: 200px;
-  border-radius: 150px;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  background: url(../imagenes/html.png) no-repeat; }
+  background: url(../imagenes/html.png) no-repeat;
+  background-position: center center;
+  background-size: 150px; }
 
 /*-----------------PROYECTOS*/
 .danza {
   height: 200px; }
 
 /*-----------------CONTACTAME*/
-.section_5 .container {
+.section_5 .linea_oscura {
+  background-color: #222222;
+  padding: 20px;
   margin: 0;
-  padding: 0; }
-.section_5 img-contact {
-  width: 100%; }
+  position: relative;
+  right: 60px;
+  width: 1250px; }
+.section_5 h2 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 90px;
+  color: #222222; }
+.section_5 img {
+  margin: 20px 20px; }
+
+/*-----------------FOOTER*/
+footer {
+  background-color: #222222;
+  padding: 10px; }
+  footer small {
+    color: #fff;
+    font-family: "Julius Sans One", sans-serif;
+    position: relative;
+    right: 0; }
 
 /*# sourceMappingURL=main.css.map */

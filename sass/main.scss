@@ -114,12 +114,13 @@ header{
         @include titulos;
     }
     .hab1{
-        width: 20
-            0px; 
-        height: 200px; 
-        border-radius: 150px; 
+        width: 180px; 
+        height: 180px; 
+        border-radius: 100%; 
         box-shadow: 0 0 8px rgba(0, 0, 0, .8);
         background: url(../imagenes/html.png) no-repeat; 
+        background-position: center center;
+        background-size: 150px;
 
     }
 }
@@ -133,15 +134,35 @@ header{
 /*-----------------CONTACTAME*/
 
 .section_5{
-    .container{
+    .linea_oscura{
+        background-color: $color_header;
+        padding: 20px;
         margin: 0;
-        padding: 0;
+        position: relative;
+        right: 60px;
+        width: 1250px;
+        
     }
-    img-contact{
-        width: 100%;
+    h2{
+        @include titulos;
+    }
+    img{
+        margin: 20px 20px;
     }
 }
-
+/*-----------------FOOTER*/
+footer{
+    background-color: $color_header;
+    padding: 10px;
+    
+    small{
+        color: #fff;
+        font-family: $letra_titulos;
+        position: relative;
+        right: 0;
+        
+    }
+}
 
 
 
