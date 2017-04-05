@@ -1,13 +1,16 @@
 
 @import 'partials/personal.scss';
 
-*{outline: solid red 1px};
+
 
 body{
     margin: 0;
     
 }
-
+@mixin section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 @mixin titulos{
     font-family: $letra_titulos;
     font-size: 28px;
@@ -24,60 +27,65 @@ body{
     padding: 8px 10px 8px 10px;
 }
 /*-----------------------------HEADER*/
-.navbar{
-    margin: 0;
-    background-color: black;
-    
-    .navbar-toggle{
-        padding: 0;
-        margin: 0;
-    }
-    .navbar-brand{
-        background-color:$color_header;
-        margin-top: 20px;
-    }
-    span{
-        @include titulos;
-        padding: 0;
-        margin-left: 15px;
-    }
-    .navbar-nav{
-        margin-top: 20px;
-        li{
-            font-size: 12px;
-            font-family: $letra_titulos;
-            font-weight: 300;
-            line-height: 90px;
-            color: $color_letra;
-        }
-    }
-    .navbar-header{
-        background-color: white;
-    }
+
+.container-nav {
+    font-family: $letra_titulos;
+    font-size: 18px;
+    background-color:#fff;
+}
+.navbar-fixed-top {
+    position: fixed;
+    padding-left: 30%;
+    z-index: 10;
+}
+.navbar-inverse {
+    background-color:black;
+    border-color: $color_fondo !important;
+    color: #fff !important;
+}
+.nav li a {
 }
 
+/*-----------------------------TYPE*/
 
 
-/*---------------------------------------------------HERO*/
-.section_1{
+h3{
+    font-size: 5em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $letra_titulos;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/*-------------------------------HERO*/
+@mixin content_hero{
     width: 100%;
-    height: auto;
+    height: 650px;
+}
+.section_1{
+    @include content_hero;
     border: 0;
     
     .hero-img{
-        width: 100%;
-        height: auto;
-        
+        @include content_hero;
         img{
-            width: 100%;
-            height: auto;
+            @include content_hero;
         }
     }
     .hero-content{
         position: absolute;
         z-index: 2;
         top: 20%;
-        left: 7%;
+        left: 47%;
     }
 }
 
@@ -85,11 +93,13 @@ body{
 
 
 .section_2{
+    @include section;
     h2{
         @include titulos;
     }
     .content{
         @include letra_contenido;
+        padding: 23px;
         
     }
        
@@ -99,6 +109,7 @@ body{
 /*-----------------HABILIDADES*/
 
 .section_3{
+    @include section;
     h2{
         @include titulos;
     }
@@ -167,18 +178,10 @@ width:110px;
 	-webkit-border-radius:3px;
 }
 
-.skill-bar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
-}
 /*-----------------PROYECTOS*/
-
+.section_4{
+    @include section;
+}
 .danza{
     height: 200px;
 }
@@ -187,6 +190,7 @@ width:110px;
 /*-----------------CONTACTAME*/
 
 .section_5{
+    @include section;
     .linea_oscura{
         background-color: $color_header;
         padding: 20px;

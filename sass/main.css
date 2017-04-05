@@ -1,77 +1,82 @@
 /*-------------------------------HEADER*/
-* {
-  outline: solid red 1px; }
-
 body {
   margin: 0; }
 
 /*-----------------------------HEADER*/
-.navbar {
-  margin: 0;
-  background-color: black; }
-  .navbar .navbar-toggle {
-    padding: 0;
-    margin: 0; }
-  .navbar .navbar-brand {
-    background-color: #222222;
-    margin-top: 20px; }
-  .navbar span {
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 90px;
-    color: #222222;
-    padding: 0;
-    margin-left: 15px; }
-  .navbar .navbar-nav {
-    margin-top: 20px; }
-    .navbar .navbar-nav li {
-      font-size: 12px;
-      font-family: "Julius Sans One", sans-serif;
-      font-weight: 300;
-      line-height: 90px;
-      color: #5b5b5b; }
-  .navbar .navbar-header {
-    background-color: white; }
+.container-nav {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 18px;
+  background-color: #fff; }
 
-/*---------------------------------------------------HERO*/
+.navbar-fixed-top {
+  position: fixed;
+  padding-left: 30%;
+  z-index: 10; }
+
+.navbar-inverse {
+  background-color: black;
+  border-color: green !important;
+  color: #fff !important; }
+
+/*-----------------------------TYPE*/
+h3 {
+  font-size: 5em;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Julius Sans One", sans-serif; }
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
+/*-------------------------------HERO*/
 .section_1 {
   width: 100%;
-  height: auto;
+  height: 650px;
   border: 0; }
   .section_1 .hero-img {
     width: 100%;
-    height: auto; }
+    height: 650px; }
     .section_1 .hero-img img {
       width: 100%;
-      height: auto; }
+      height: 650px; }
   .section_1 .hero-content {
     position: absolute;
     z-index: 2;
     top: 20%;
-    left: 7%; }
+    left: 47%; }
 
 /*-----------------ACERCA DE MI*/
-.section_2 h2 {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 90px;
-  color: #222222; }
-.section_2 .content {
-  font-family: "Dosis", sans-serif;
-  font-size: 22px;
-  background-color: #1C1C1C;
-  color: #fff;
-  padding: 8px 10px 8px 10px; }
+.section_2 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .section_2 h2 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 90px;
+    color: #222222; }
+  .section_2 .content {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    background-color: #1C1C1C;
+    color: #fff;
+    padding: 8px 10px 8px 10px;
+    padding: 23px; }
 
 /*-----------------HABILIDADES*/
-.section_3 h2 {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 90px;
-  color: #222222; }
+.section_3 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .section_3 h2 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 90px;
+    color: #222222; }
 
 .skillbar {
   position: relative;
@@ -131,43 +136,40 @@ body {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px; }
 
-.skill-bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 11px;
-  height: 35px;
-  line-height: 35px;
-  color: #ffffff;
-  color: rgba(0, 0, 0, 0.4); }
-
 /*-----------------PROYECTOS*/
+.section_4 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
 .danza {
   height: 200px; }
 
 /*-----------------CONTACTAME*/
-.section_5 .linea_oscura {
-  background-color: #222222;
-  padding: 20px;
-  margin: 0;
-  position: relative;
-  right: 60px;
-  width: 1250px; }
-.section_5 h2 {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 90px;
-  color: #222222; }
-.section_5 img {
-  margin: 20px 20px; }
-.section_5 .btn {
-  font-family: "Julius Sans One", sans-serif;
-  padding: 20px;
-  margin-top: 20px;
-  margin-left: 120px; }
-  .section_5 .btn.btn-info {
-    background-color: black; }
+.section_5 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .section_5 .linea_oscura {
+    background-color: #222222;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    right: 60px;
+    width: 1250px; }
+  .section_5 h2 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 90px;
+    color: #222222; }
+  .section_5 img {
+    margin: 20px 20px; }
+  .section_5 .btn {
+    font-family: "Julius Sans One", sans-serif;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 120px; }
+    .section_5 .btn.btn-info {
+      background-color: black; }
 
 /*-----------------FOOTER*/
 footer {
