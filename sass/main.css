@@ -1,22 +1,39 @@
 /*-------------------------------HEADER*/
+* {
+  outline: 1px solid red; }
+
 body {
   margin: 0; }
 
 /*-----------------------------HEADER*/
+header {
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  border-bottom: solid 2px black;
+  margin-right: 15px; }
+
 .container-nav {
   font-family: "Julius Sans One", sans-serif;
   font-size: 18px;
-  background-color: #fff; }
+  background-color: #E6FEF3;
+  border-bottom: solid 1px black; }
 
 .navbar-fixed-top {
   position: fixed;
   padding-left: 30%;
-  z-index: 10; }
+  z-index: 10;
+  background-color: black; }
 
-.navbar-inverse {
-  background-color: black;
-  border-color: green !important;
-  color: #fff !important; }
+.navbar button {
+  border: solid 1px #222222; }
+
+.navbar-header span {
+  background-color: #535a5a; }
+
+.nav li a:hover {
+  background-color: #B7BAB9; }
 
 /*-----------------------------TYPE*/
 h3 {
@@ -35,19 +52,17 @@ span {
 /*-------------------------------HERO*/
 .section_1 {
   width: 100%;
-  height: 650px;
-  border: 0; }
-  .section_1 .hero-img {
-    width: 100%;
-    height: 650px; }
-    .section_1 .hero-img img {
-      width: 100%;
-      height: 650px; }
+  height: 640px;
+  color: #fff;
+  background: url(../imagenes/gio2.jpeg) no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center; }
+  .section_1 .dark {
+    background: rgba(0, 0, 0, 0.56); }
   .section_1 .hero-content {
-    position: absolute;
-    z-index: 2;
-    top: 20%;
-    left: 47%; }
+    text-align: center;
+    padding: 150px 0; }
 
 /*-----------------ACERCA DE MI*/
 .section_2 {
@@ -58,14 +73,16 @@ span {
     font-size: 28px;
     font-weight: 300;
     line-height: 90px;
-    color: #222222; }
+    color: #222222;
+    margin-top: 80px;
+    margin-bottom: 20px; }
   .section_2 .content {
-    font-family: "Dosis", sans-serif;
-    font-size: 22px;
+    font-family: "Imprima", sans-serif;
+    font-size: 18px;
     background-color: #1C1C1C;
     color: #fff;
-    padding: 8px 10px 8px 10px;
-    padding: 23px; }
+    padding: 23px;
+    margin-top: 16px; }
 
 /*-----------------HABILIDADES*/
 .section_3 {
@@ -76,70 +93,84 @@ span {
     font-size: 28px;
     font-weight: 300;
     line-height: 90px;
-    color: #222222; }
-
-.skillbar {
-  position: relative;
-  display: block;
-  margin-bottom: 15px;
-  width: 100%;
-  background: #eee;
-  height: 35px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -ms-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
-  -webkit-transition-property: width, background-color;
-  -moz-transition-property: width, background-color;
-  -ms-transition-property: width, background-color;
-  -o-transition-property: width, background-color;
-  transition-property: width, background-color; }
-
-.skillbar-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110px;
-  font-weight: bold;
-  font-size: 13px;
-  color: #ffffff;
-  background: #6adcfa;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
-
-.skillbar-title span {
-  display: block;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  height: 35px;
-  line-height: 35px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
-
-.skillbar-bar {
-  height: 35px;
-  width: 0px;
-  background: #6adcfa;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px; }
+    color: #222222;
+    margin-top: 80px;
+    margin-bottom: 20px; }
+  .section_3 .skill .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color; }
+  .section_3 .skill .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .section_3 .skill .skillbar-title span {
+    font-family: "Julius Sans One", sans-serif;
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+    .section_3 .skill .skillbar-title span i {
+      padding-right: 7px; }
+  .section_3 .skill .skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; }
 
 /*-----------------PROYECTOS*/
 .section_4 {
   margin-top: 80px;
   margin-bottom: 80px; }
+  .section_4 h3 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 90px;
+    color: #222222;
+    margin-top: 80px;
+    margin-bottom: 20px; }
+  .section_4 .ver {
+    background-color: #222222;
+    padding: 5px 20px 5px 20px;
+    color: #fff;
+    margin-bottom: 10px; }
 
 .danza {
   height: 200px; }
@@ -160,7 +191,9 @@ span {
     font-size: 28px;
     font-weight: 300;
     line-height: 90px;
-    color: #222222; }
+    color: #222222;
+    margin-top: 80px;
+    margin-bottom: 20px; }
   .section_5 img {
     margin: 20px 20px; }
   .section_5 .btn {
