@@ -9,8 +9,8 @@ body{
     
 }
 @mixin section{
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 @mixin titulos{
     font-family: $letra_titulos;
@@ -40,23 +40,26 @@ header{
 .container-nav {
     font-family: $letra_titulos;
     font-size: 18px;
-    background-color:#E6FEF3;
+    background-color:#fff;
     border-bottom: solid 1px black;
 }
-.navbar-fixed-top {
-    position: fixed;
-    padding-left: 30%;
-    z-index: 10;
+.navbar-brand {
     background-color:black;
+    margin: 0;
+    color: white;
+    
 }
+.navbar-nav a{
+        color: $color_header;
+    }
 .navbar button{
-    border: solid 1px $color_header;
+    border: solid 1px #797979;
 }
  .navbar-header span{
-       background-color: #535a5a;
+       background-color: $color_header;
   }
 .nav li a:hover {
-    background-color:#B7BAB9;
+    background-color:#BCC2BF;
 }
 /*-----------------------------TYPE*/
 
@@ -66,6 +69,8 @@ h3{
     color: #fff;
     text-transform: uppercase;
     font-family: $letra_titulos;
+    text-align: right;
+    padding: 150px 0;
 }
 
 span {
@@ -94,12 +99,10 @@ span {
     background-position: center;
     
     .dark {
-    background: rgba(0, 0, 0, 0.56);
+        @include content_hero;
+        background: rgba(0, 0, 0, 0.56);
  }
-    .hero-content {
-    text-align: center;
-    padding: 150px 0;
- }
+   
 }
 
 /*-----------------ACERCA DE MI*/
@@ -219,7 +222,9 @@ span {
         padding: 5px 20px 5px 20px;
         color: #fff;
         margin-bottom: 10px;
-        
+    }
+    .space{
+        padding: 10px;
     }
 }
 .danza{
@@ -230,7 +235,7 @@ span {
 /*-----------------CONTACTAME*/
 
 .section_5{
-    @include section;
+    margin-top: 70px;
     .linea_oscura{
         background-color: $color_header;
         padding: 20px;

@@ -1428,7 +1428,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: #38D4AC;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1514,7 +1514,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #3CD05C;
+  background: #38D4AC;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -1961,7 +1961,7 @@
 .hvr-trim:before {
   content: '';
   position: absolute;
-  border: white solid 4px;
+  border: white solid 2px;
   top: 4px;
   left: 4px;
   right: 4px;
